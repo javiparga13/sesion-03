@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Presentacion</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Javiera Parga</h1>
+        </header>
+        <main>
+            <p>Quiero dedicarme a esto cuando egrese jaja pero soy maomeno</p>
+        </main>     
+        <footer>
+            <div></div>
+            <div></div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+        <script>
+            var alternativas = ["a la Nayafacil", "un plato de tallarines", "unas zapatillas en el tendido electrico", "una paloma"];
+            function setup() {
+                var lugar = select("footer");
+                var alternativa = random(alternativas);
+                createA("page.html"+"?dibuja="+alternativa, "Dibuja " + alternativa).parent(lugar);
+                noCanvas();
+            }
+        </script>
+    </body>
+</html>
